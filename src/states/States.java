@@ -5,15 +5,23 @@
  */
 package states;
 
+import user.User;
+
+
 /**
  *
  * @author pattt
  */
-public class States {
+public class States{
+    
+    // Reference to our User class
+    private static User user;
+    
     public static void main(String args[]) 
     {   
         State[] states = new State[50];                                         //We first create an empty array of state objects 50 elements long
         StateList.loadData(states);                                             //Call the method in the StateList file to read the file
-        StateList.searchState(states);                                          //Then give the user an oportunity to search the file
+        //StateList.searchForState(states);                                          //Then give the user an oportunity to search the file
+        User.handleUserInput(states, user);
     }
 }

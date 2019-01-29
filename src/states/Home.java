@@ -13,7 +13,7 @@ public class Home {
     
     private final State homeState;
 
-    Home(State home){
+    public Home(State home){
         homeState = home;
     }
 
@@ -23,7 +23,7 @@ public class Home {
 
     @Override
     public String toString() {
-        return "Home [" + homeState.toString() + "]";
+        return "Home: [" + homeState.toString() + "]";
     }
     
     

@@ -30,6 +30,6 @@ public class State {
 
     @Override
     public String toString() { //Creates a readable format for the all the the states features
-        return "State: " + state + "\nCapital: " + capital + "\nPopulation: " + population;
+        return "State: " + state + "    Capital: " + capital + "    Population: " + population;
     }
 } //Close of State class file
